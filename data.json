@@ -1,0 +1,58 @@
+[
+  {
+    "term": "VPN",
+    "link": "vpn.html"
+  },
+  {
+    "term": "IPアドレス",
+    "link": "ip.html"
+  },
+  {
+    "term": "DNS",
+    "link": "dns.html"
+  },
+  {
+    "term": "SFPポート",
+    "link": "sfp.html"
+  },
+ {
+    "term": "MACアドレス",
+    "link": "MACアドレス.html"
+  },
+   {
+    "term": "アクセスポイント",
+    "link": "AP.html"
+  },
+ {
+    "term": "スイッチ",
+   "link": "スイッチ.html"
+  },
+ {
+    "term": "ルーター",
+   "link": "ルーター.html"
+  },
+ {
+    "term": "UTM",
+   "link": "UTM.html"
+  },
+   {
+    "term": "ファイアウォール（Firewall）",
+   "link": "ファイアウォール（Firewall）.html"
+  },
+     {
+    "term": "IPS",
+   "link": "IPS.html"
+  },
+   {
+    "term": "IDS",
+   "link": "IDS.html"
+  },
+   {
+    "term": "パソコン(PC)",
+   "link": "パソコン(PC).html"
+  },
+   {
+    "term": "AD(アクティブディレクトリ)",
+   "link": "AD(アクティブディレクトリ).html"
+  }
+]

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT用語辞典</title>
+
+  <script src="script.js" defer></script>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: "Yu Gothic", sans-serif;
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    /* ===== ヘッダー ===== */
+
+    header{
+      background: linear-gradient(135deg, #0052cc, #003366);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    header h1{
+      font-size: 48px;
+      margin-bottom: 15px;
+      letter-spacing: 2px;
+    }
+
+    header p{
+      max-width: 900px;
+      margin: auto;
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    /* ===== メイン ===== */
+
+    .container{
+      width: 90%;
+      max-width: 1100px;
+      margin: 50px auto;
+    }
+
+    /* ===== 検索エリア ===== */
+
+    .search-box{
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+      margin-bottom: 40px;
+    }
+
+    .search-box h2{
+      color: #0052cc;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    #searchBox{
+      width: 100%;
+      padding: 16px;
+      border: 2px solid #d0d7e2;
+      border-radius: 12px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    #searchBox:focus{
+      outline: none;
+      border-color: #0052cc;
+      box-shadow: 0 0 10px rgba(0,82,204,0.2);
+    }
+
+    #result{
+      margin-top: 25px;
+      padding: 20px;
+      background: #eef5ff;
+      border-left: 6px solid #0052cc;
+      border-radius: 10px;
+      min-height: 60px;
+    }
+
+    /* ===== 用語一覧 ===== */
+
+    .word-section{
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    }
+
+    .word-section h2{
+      color: #0052cc;
+      margin-bottom: 25px;
+      font-size: 30px;
+      border-left: 7px solid #0052cc;
+      padding-left: 12px;
+    }
+
+    #wordList{
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    #wordList li{
+      background: #f7faff;
+      padding: 18px;
+      border-radius: 12px;
+      transition: 0.3s;
+      border: 1px solid #dbe6f5;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #wordList li:hover{
+      transform: translateY(-5px);
+      background: #e8f1ff;
+      color: #0052cc;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    /* ===== フッター ===== */
+
+    footer{
+      margin-top: 60px;
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+    /* ===== レスポンシブ ===== */
+
+    @media(max-width: 768px){
+
+      header h1{
+        font-size: 36px;
+      }
+
+      .search-box,
+      .word-section{
+        padding: 25px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+
+  <header>
+    <h1>IT用語辞典</h1>
+
+    <p>
+      当サイトは個人の趣味で運営しています。<br>
+      掲載内容の正確性・完全性を保証するものではありません。<br>
+      当サイトの情報を利用したことによって生じた損害について、
+      製作者は一切の責任を負いません。
+    </p>
+  </header>
+
+  <!-- ===== メインコンテンツ ===== -->
+
+  <div class="container">
+
+    <!-- ===== 検索 ===== -->
+
+    <section class="search-box">
+
+      <h2>用語検索</h2>
+
+      <input
+        type="text"
+        id="searchBox"
+        placeholder="例：CPU / HTML / IDS"
+      >
+
+      <div id="result">
+        ここに検索結果が表示されます。
+      </div>
+
+    </section>
+
+    <!-- ===== 用語一覧 ===== -->
+
+    <section class="word-section">
+
+      <h2>用語一覧</h2>
+
+      <ul id="wordList">
+        <!-- JavaScriptで用語追加 -->
+      </ul>
+
+    </section>
+
+  </div>
+
+  <!-- ===== フッター ===== -->
+
+  <footer>
+    IT学習用サイト
+  </footer>
+
+</body>
+</html>

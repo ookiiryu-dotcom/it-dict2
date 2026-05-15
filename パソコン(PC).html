@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>パソコンとは？</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: "Yu Gothic", sans-serif;
+      background-color: #f4f7fb;
+      color: #333;
+      line-height: 1.9;
+    }
+
+    /* ===== ヘッダー ===== */
+
+    header{
+      background: linear-gradient(135deg, #0066cc, #003366);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    header h1{
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    header p{
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* ===== コンテナ ===== */
+
+    .container{
+      width: 90%;
+      max-width: 1100px;
+      margin: 50px auto;
+    }
+
+    /* ===== カード ===== */
+
+    .card{
+      background: white;
+      border-radius: 18px;
+      padding: 35px;
+      margin-bottom: 35px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover{
+      transform: translateY(-5px);
+    }
+
+    h2{
+      color: #0066cc;
+      margin-bottom: 20px;
+      border-left: 6px solid #0066cc;
+      padding-left: 12px;
+      font-size: 28px;
+    }
+
+    /* ===== 強調 ===== */
+
+    .highlight{
+      color: red;
+      font-weight: bold;
+    }
+
+    .blue{
+      color: #0066cc;
+      font-weight: bold;
+    }
+
+    /* ===== パーツ一覧 ===== */
+
+    .parts{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .part-box{
+      background-color: #eef5ff;
+      padding: 22px;
+      border-radius: 14px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .part-box:hover{
+      transform: translateY(-5px);
+    }
+
+    .part-box h3{
+      color: #003366;
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    /* ===== リスト ===== */
+
+    .list{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .list-box{
+      background: #eef5ff;
+      padding: 18px;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .list-box:hover{
+      transform: translateY(-5px);
+    }
+
+    /* ===== 例 ===== */
+
+    .example{
+      background-color: #fff8e6;
+      border-left: 6px solid orange;
+      padding: 22px;
+      border-radius: 12px;
+      margin-top: 25px;
+    }
+
+    /* ===== ポイント ===== */
+
+    .point-box{
+      background: #eef5ff;
+      border-left: 6px solid #0066cc;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 25px;
+    }
+
+    /* ===== 戻る ===== */
+
+    .back{
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back a{
+      display: inline-block;
+      background: #0066cc;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .back a:hover{
+      background: #004c99;
+      transform: translateY(-3px);
+    }
+
+    /* ===== フッター ===== */
+
+    footer{
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 60px;
+    }
+
+    /* ===== スマホ ===== */
+
+    @media(max-width:768px){
+
+      header h1{
+        font-size: 38px;
+      }
+
+      .card{
+        padding: 25px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+
+  <header>
+    <h1>パソコンとは？</h1>
+    <p>パソコンの仕組みをわかりやすく学ぼう</p>
+  </header>
+
+  <!-- ===== メイン ===== -->
+
+  <div class="container">
+
+    <!-- ===== パソコンとは ===== -->
+
+    <div class="card">
+
+      <h2>パソコンとは</h2>
+
+      <p>
+        <span class="highlight">パソコン</span>
+        とは、
+        人からの命令を受けて、
+        <span class="highlight">
+          計算・保存・表示
+        </span>
+        などを行う機械です。
+      </p>
+
+      <p style="margin-top:15px;">
+        例えば、
+        <span class="blue">ゲーム</span>、
+        <span class="blue">インターネット</span>、
+        <span class="blue">動画視聴</span>、
+        <span class="blue">レポート作成</span>
+        など、
+        さまざまなことができます。
+      </p>
+
+      <div class="point-box">
+
+        <p>
+          現代では、
+          パソコンは仕事・学校・趣味など、
+          様々な場面で利用されています。
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- ===== 主な部品 ===== -->
+
+    <div class="card">
+
+      <h2>パソコンの主な部品</h2>
+
+      <div class="parts">
+
+        <div class="part-box">
+
+          <h3>CPU</h3>
+
+          <p>
+            パソコンの
+            <span class="highlight">頭脳</span>。<br>
+            計算や命令処理を行う。
+          </p>
+
+        </div>
+
+        <div class="part-box">
+
+          <h3>メモリ</h3>
+
+          <p>
+            作業中のデータを置く<br>
+            <span class="highlight">作業机</span>
+            のような場所。
+          </p>
+
+        </div>
+
+        <div class="part-box">
+
+          <h3>ストレージ</h3>
+
+          <p>
+            写真やファイルを保存する<br>
+            <span class="highlight">本棚</span>
+            の役割。
+          </p>
+
+        </div>
+
+        <div class="part-box">
+
+          <h3>ディスプレイ</h3>
+
+          <p>
+            パソコンの情報を表示する<br>
+            <span class="highlight">画面</span>。
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ===== できること ===== -->
+
+    <div class="card">
+
+      <h2>パソコンでできること</h2>
+
+      <p>
+        パソコンでは、
+        次のようなことができます。
+      </p>
+
+      <div class="list">
+
+        <div class="list-box">
+          文章作成
+        </div>
+
+        <div class="list-box">
+          インターネット検索
+        </div>
+
+        <div class="list-box">
+          動画視聴
+        </div>
+
+        <div class="list-box">
+          ゲーム
+        </div>
+
+        <div class="list-box">
+          プログラミング
+        </div>
+
+        <div class="list-box">
+          オンライン会議
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ===== 動く流れ ===== -->
+
+    <div class="card">
+
+      <h2>パソコンの動く流れ</h2>
+
+      <p>
+        パソコンは、
+        入力された情報をCPUが処理し、
+        メモリを使いながら、
+        必要に応じてストレージへ保存します。
+      </p>
+
+      <div class="example">
+
+        <p>
+          例：
+        </p>
+
+        <p style="margin-top:15px;">
+
+          キーボード入力<br>
+          ↓<br>
+          CPUが計算<br>
+          ↓<br>
+          メモリで作業<br>
+          ↓<br>
+          画面へ表示<br>
+          ↓<br>
+          ストレージへ保存
+
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- ===== 人間に例える ===== -->
+
+    <div class="card">
+
+      <h2>人間にたとえると？</h2>
+
+      <div class="example">
+
+        <p>
+          パソコンは人間にたとえると、
+        </p>
+
+        <p style="margin-top:15px;">
+
+          ・CPU =
+          <span class="highlight">頭脳</span><br>
+
+          ・メモリ =
+          <span class="highlight">机</span><br>
+
+          ・ストレージ =
+          <span class="highlight">本棚</span>
+
+        </p>
+
+        <p style="margin-top:15px;">
+          のようなイメージです。
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- ===== まとめ ===== -->
+
+    <div class="card">
+
+      <h2>まとめ</h2>
+
+      <p>
+        パソコンとは、
+        <span class="highlight">
+          人の命令を高速で正確に実行する便利な機械
+        </span>
+        です。
+      </p>
+
+      <p style="margin-top:15px;">
+        現代では、
+        学校・仕事・ゲーム・インターネットなど、
+        様々な場面で活用されています。
+      </p>
+
+    </div>
+
+    <!-- ===== 戻る ===== -->
+
+    <div class="back">
+      <a href="index.html">← 用語一覧へ戻る</a>
+    </div>
+
+  </div>
+
+  <!-- ===== フッター ===== -->
+
+  <footer>
+    IT学習用サイト
+  </footer>
+
+</body>
+</html>
