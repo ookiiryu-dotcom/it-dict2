@@ -145,17 +145,66 @@
       font-size: 14px;
     }
 
-    /* ===== レスポンシブ ===== */
+    /* ===== スマホのみ最適化 ===== */
 
-    @media(max-width: 768px){
+    @media screen and (max-width: 768px){
+
+      body{
+        line-height: 1.7;
+      }
+
+      header{
+        padding: 50px 15px;
+      }
 
       header h1{
-        font-size: 36px;
+        font-size: 34px;
+        letter-spacing: 1px;
+      }
+
+      header p{
+        font-size: 13px;
+      }
+
+      .container{
+        width: 95%;
+        margin: 25px auto;
       }
 
       .search-box,
       .word-section{
-        padding: 25px;
+        padding: 22px;
+        border-radius: 14px;
+      }
+
+      .search-box h2,
+      .word-section h2{
+        font-size: 22px;
+      }
+
+      #searchBox{
+        font-size: 15px;
+        padding: 14px;
+      }
+
+      #result{
+        font-size: 14px;
+        padding: 16px;
+      }
+
+      #wordList{
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      #wordList li{
+        padding: 15px;
+        font-size: 15px;
+      }
+
+      footer{
+        font-size: 12px;
+        padding: 20px;
       }
 
     }
@@ -168,6 +217,7 @@
   <!-- ===== ヘッダー ===== -->
 
   <header>
+
     <h1>IT用語辞典</h1>
 
     <p>
@@ -176,6 +226,7 @@
       当サイトの情報を利用したことによって生じた損害について、
       製作者は一切の責任を負いません。
     </p>
+
   </header>
 
   <!-- ===== メインコンテンツ ===== -->
