@@ -134,6 +134,12 @@
       box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     }
 
+    /* ===== 表 ===== */
+
+    .table-wrap{
+      width: 100%;
+    }
+
     /* ===== フッター ===== */
 
     footer{
@@ -205,6 +211,26 @@
       footer{
         font-size: 12px;
         padding: 20px;
+      }
+
+      /* ===== スマホのみ 表改善 ===== */
+
+      .table-wrap{
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-top: 20px;
+      }
+
+      table{
+        min-width: 650px;
+      }
+
+      th,
+      td{
+        font-size: 14px;
+        padding: 14px;
+        line-height: 1.7;
+        word-break: keep-all;
       }
 
     }
