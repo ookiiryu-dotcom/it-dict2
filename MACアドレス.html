@@ -196,6 +196,28 @@
 
     }
 
+      /* ===== スマホで表を崩れにくくする ===== */
+
+  @media screen and (max-width: 768px){
+
+    table{
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+      border-collapse: collapse;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    th,
+    td{
+      min-width: 120px;
+      padding: 12px;
+      font-size: 14px;
+      word-break: break-word;
+      white-space: normal;
+    }
+
+  }
   </style>
 </head>
 
